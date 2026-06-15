@@ -1,6 +1,6 @@
 # Contributing Guide
 
-Welcome to the Stella Wave project! This guide will help you set up your development environment, understand our workflow, and contribute effectively.
+Welcome to the RustAcademy project! This guide will help you set up your development environment, understand our workflow, and contribute effectively.
 
 ## Quick Start: One-Click Dev Environment
 

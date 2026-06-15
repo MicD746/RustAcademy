@@ -1,5 +1,5 @@
 [package]
-name = "quickex"
+name = "RustAcademy"
 version = "0.1.0"
 edition = "2021"
 description = "X-Ray privacy Soroban contract for  RustAcademy"
