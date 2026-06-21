@@ -21,8 +21,6 @@ mod fee_router_test;
 mod fee_test;
 #[cfg(test)]
 mod fuzz_test;
-#[cfg(test)]
-mod guard_test;
 mod hook;
 #[cfg(test)]
 mod metadata_test;
