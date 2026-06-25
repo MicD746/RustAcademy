@@ -2,9 +2,6 @@ import {
   Module,
   MiddlewareConsumer,
   NestModule,
-  Type,
-  DynamicModule,
-  ForwardReference,
 } from "@nestjs/common";
 import { EventEmitterModule } from "@nestjs/event-emitter";
 import { ThrottlerModule } from "@nestjs/throttler";
@@ -23,13 +20,11 @@ import { LinksModule } from "./links/links.module";
 import { ScamAlertsModule } from "./scam-alerts/scam-alerts.module";
 import { TransactionsModule } from "./transactions/transactions.module";
 import { PaymentsModule } from "./payments/payments.module";
-import { ReconciliationModule } from "./reconciliation/reconciliation.module";
 import { MetricsMiddleware } from "./metrics/metrics.middleware";
 import { MetricsInterceptor } from "./metrics/metrics.interceptor";
 import { CorrelationIdMiddleware } from "./common/middleware/correlation-id.middleware";
 import { OrganizationContextMiddleware } from "./common/middleware/organization-context.middleware";
 import { ShadowTrafficMiddleware } from "./environment-parity/shadow-traffic.middleware";
-import { NotificationsModule } from "./notifications/notifications.module";
 import { IngestionModule } from "./ingestion/ingestion.module";
 import { ApiKeysModule } from "./api-keys/api-keys.module";
 import { MarketplaceModule } from "./marketplace/marketplace.module";
@@ -40,7 +35,6 @@ import { ExportsModule } from "./exports/exports.module";
 import { JobQueueModule } from "./job-queue/job-queue.module";
 import { AuditModule } from "./audit/audit.module";
 import { FeatureFlagsModule } from "./feature-flags/feature-flags.module";
-import { DeveloperModule } from "./developer/developer.module";
 import { PrivacyModule } from "./privacy/privacy.module";
 import { ContractsModule } from "./contracts/contracts.module";
 import { SorobanToolingModule } from "./soroban-tooling/soroban-tooling.module";
@@ -50,7 +44,7 @@ import { throttlerModuleProfiles } from "./config/rate-limit.config";
 import { EnvironmentParityModule } from "./environment-parity/environment-parity.module";
 import { IndexerLagModule } from "./indexer-lag";
 import { SupportBundleModule } from "./support-bundle/support-bundle.module";
-import { AppImport, getDynamicModules } from "./module-factory";
+import { getDynamicModules } from "./module-factory";
 
 // Validate environment variables for module composition.
 // This ensures that feature flags are deterministic and typed.
