@@ -33,6 +33,11 @@ package-json.lock
 /.nyc_output
 **/__snapshots__/*.snap
 
+# Test snapshots
+**/__snapshots__/*
+*.snap
+test_snapshots/
+
 # IDEs and editors
 /.idea
 .project
